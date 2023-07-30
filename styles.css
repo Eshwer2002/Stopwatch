@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  background: #141313;
+  width: 42%;
+  min-width: 500px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  padding:  0  0  60px 0;
+  border-radius: 20px;
+}
+h1{
+  color: #fff;
+  text-align: center;
+  font-size: 64px;
+  margin: 20px;
+  text-transform: uppercase;
+}
+.timerDisplay{
+  position: relative;
+  width: 90%;
+  background: linear-gradient(135deg, #0048ce, #008bfd);
+  left: 5%;
+  padding: 40px 20px;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,139,253,0.25);
+}
+.buttons{
+  width: 80%;
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons button{
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #141313;
+  border: none;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.buttons button:hover{
+  background-color: #008bfd;
+  color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+  .container{
+    width: 70%;
+  }
+  .timerDisplay{
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 960px) {
+  .container{
+    width: 75%;
+  }
+  .timerDisplay{
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1088px) {
+  .container{
+    width: 60%;
+  }
+  .timerDisplay{
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 1088px) and (max-width: 1470px) {
+  .container{
+    width: 50%;
+  }
+  .timerDisplay{
+    font-size: 2.6rem;
+  }
+}
